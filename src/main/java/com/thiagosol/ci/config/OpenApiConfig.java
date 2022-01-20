@@ -12,8 +12,8 @@ public class OpenApiConfig {
     @Bean
     public OpenAPI creditHubOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("So Pick-Up Soccer Game - REST API")
-                        .description("Thiago Sol API for So Pick-Up Soccer Game")
+                .info(new Info().title("Ci Deploy - REST API")
+                        .description("Thiago Sol API for Deploys")
                         .version("1.0.0")
                         .license(new License().name("Apache License Version 2.").url("https://www.apache.org/licenses/LICENSE-2.0")));
     }
