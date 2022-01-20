@@ -2,8 +2,8 @@ version: '3'
 
 services:
   robobet:
-    image: so-pick-up-soccer-game
-    container_name: so-pick-up-soccer-game
+    image: ci
+    container_name: ci
     restart: unless-stopped
     security_opt:
       - no-new-privileges:true
