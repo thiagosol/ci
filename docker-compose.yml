@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  robobet:
+    image: so-pick-up-soccer-game
+    container_name: so-pick-up-soccer-game
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - proxy
+    ports:
+      - "9002:8181"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./data:/data
+
+networks:
+  proxy:
+    external: true

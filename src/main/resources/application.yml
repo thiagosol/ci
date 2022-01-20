@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  compression:
+    enabled: true
+    mime-types: application/json
+  connect:
+    user: 
+    pass:
+    host:
+
+spring:
+  mvc.async.request-timeout: 5000
+  application:
+    name: ci
+
+springdoc:
+  packagesToScan: com.thiagosol.ci
+  pathsToMatch: /**
+  swagger-ui:
+    disable-swagger-default-url: true
+    doc-expansion: none
+    tagsSorter: alpha
